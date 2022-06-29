@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="LocalAuthTest" customModuleProvider="target">
+            <connections>
+                <outlet property="getKeyChainButton" destination="Cto-Wa-SqK" id="rQ3-5U-Wva"/>
+                <outlet property="localAuthenticationButton" destination="f53-BJ-bUB" id="woB-27-0M0"/>
+                <outlet property="saveKeyChainButton" destination="9LP-Bc-7Fc" id="fa8-Pk-tuY"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f53-BJ-bUB">
+                    <rect key="frame" x="0.0" y="118" width="414" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Local Authentication"/>
+                    <connections>
+                        <action selector="localAuthenticationBtnClicked:" destination="-1" eventType="touchUpInside" id="LnK-tU-ml9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9LP-Bc-7Fc">
+                    <rect key="frame" x="0.0" y="179" width="414" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Save KeyChain"/>
+                    <connections>
+                        <action selector="saveKeyChainBtnClicked:" destination="-1" eventType="touchUpInside" id="lMQ-Sf-sAU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cto-Wa-SqK">
+                    <rect key="frame" x="0.0" y="240" width="414" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Get KeyChain"/>
+                    <connections>
+                        <action selector="getKeyChainBtnClicked:" destination="-1" eventType="touchUpInside" id="i1J-3d-mat"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9LP-Bc-7Fc" firstAttribute="top" secondItem="f53-BJ-bUB" secondAttribute="bottom" constant="30" id="2bL-Qn-oxE"/>
+                <constraint firstItem="Cto-Wa-SqK" firstAttribute="top" secondItem="9LP-Bc-7Fc" secondAttribute="bottom" constant="30" id="4Nb-2P-Gdy"/>
+                <constraint firstItem="Cto-Wa-SqK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GT0-Uc-57p"/>
+                <constraint firstItem="f53-BJ-bUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ipj-xE-rqT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="f53-BJ-bUB" secondAttribute="trailing" id="YQG-5q-ZuC"/>
+                <constraint firstItem="f53-BJ-bUB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="aEI-Bm-5nd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9LP-Bc-7Fc" secondAttribute="trailing" id="exb-qJ-xGN"/>
+                <constraint firstItem="9LP-Bc-7Fc" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ghI-gS-52v"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cto-Wa-SqK" secondAttribute="trailing" id="zbk-Pt-L1R"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="139" y="98"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
